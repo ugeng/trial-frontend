@@ -17,7 +17,7 @@ export default class extends PureComponent {
   }
 
   render() {
-    return <Menu compact  defaultActiveIndex={0} size="mini" items={items} onItemClick={this.onItemClick} />
+    return <Menu compact defaultActiveIndex={0} size="mini" items={items} onItemClick={this.onItemClick} />
   }
 };
 
