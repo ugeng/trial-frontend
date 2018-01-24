@@ -14,15 +14,15 @@ import View from '../constants/view';
 
 const margin = { top: 5, right: 20, left: 10, bottom: 5 };
 
-const TradeDataChart = ({ data, view }) =>
+const TradeDataChart = ({ data, dataKey1, dataKey2 }) =>
     <LineChart width={640} height={400} data={data} margin={margin}>
         <CartesianGrid strokeDasharray="3 3" />
         <XAxis dataKey="name" />
         <YAxis />
         <Tooltip />
         <Legend />
-        <Line dot={false} connectNulls={true} type="monotone" dataKey="open" stroke="#8884d8" />
-        <Line dot={false} connectNulls={true} type="monotone" dataKey="close" stroke="#82ca9d" />
+        <Line dot={false} connectNulls={true} type="monotone" dataKey={dataKey1} stroke="#8884d8" />
+        <Line dot={false} connectNulls={true} type="monotone" dataKey={dataKey2} stroke="#82ca9d" />
     </LineChart>
 
 const mapProps = (ownProps) => {
