@@ -1,4 +1,0 @@
-{
-    "plugins": ["lodash", "recharts"],
-    "presets": ["es2015", ["@babel/env", { "targets": { "node": 6 } }]]
-}
